@@ -4,6 +4,8 @@ app_publisher = "Faris Ansari"
 app_description = " Library Management System"
 app_email = "faris@example.com"
 app_license = "mit"
+
+fixtures = ['Custom Field']
 # required_apps = []
 
 # Includes in <head>
