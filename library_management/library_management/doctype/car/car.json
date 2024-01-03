@@ -1,24 +1,61 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2023-12-31 15:19:54.370396",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_jcai"
+  "naming_series",
+  "name1",
+  "seats",
+  "carplate",
+  "image"
  ],
  "fields": [
   {
-   "fieldname": "section_break_jcai",
-   "fieldtype": "Section Break"
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": " Naming Series",
+   "options": "CAR-.YYYY.-"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "seats",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Seats",
+   "options": "2\n4\n6\n8",
+   "reqd": 1
+  },
+  {
+   "description": "The format must be like abcd-123",
+   "fieldname": "carplate",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Carplate",
+   "reqd": 1
   }
  ],
+ "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-31 15:19:54.370396",
+ "modified": "2024-01-03 11:00:15.651265",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Car",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
