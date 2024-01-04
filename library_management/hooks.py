@@ -135,7 +135,12 @@ override_doctype_class = {
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
+	"cron":{
+		 "0 0 * * *":[
+				"library_management.overrides.sales_order.update_days_of_delivery"
+				]
+		},
 #	"all": [
 #		"library_management.tasks.all"
 #	],
@@ -151,7 +156,7 @@ override_doctype_class = {
 #	"monthly": [
 #		"library_management.tasks.monthly"
 #	],
-# }
+}
 
 # Testing
 # -------
