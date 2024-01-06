@@ -17,7 +17,7 @@ frappe.ui.form.on("Bank Loan", {
 function calculate_monthly_repayment(frm) {
     if (frm.doc.load_amount && frm.doc.repayment_months) {
         var monthly = frm.doc.load_amount / frm.doc.repayment_months;
-        var monthly = monthly + (monthly * frm.doc.interest / 100);
+        var monthly = monthly + monthly * frm.doc.interest / 100;
         frm.doc.monthly_repayment = monthly;
         refresh_field('monthly_repayment')
     }
