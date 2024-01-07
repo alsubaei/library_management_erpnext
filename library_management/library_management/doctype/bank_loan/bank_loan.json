@@ -15,7 +15,7 @@
   "posting_date",
   "status",
   "section_break_sgwy",
-  "load_amount",
+  "loan_amount",
   "interest",
   "repayment_date",
   "column_break_nf0g",
@@ -87,14 +87,6 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "load_amount",
-   "fieldtype": "Currency",
-   "in_list_view": 1,
-   "label": "Load Amount",
-   "non_negative": 1,
-   "reqd": 1
-  },
-  {
    "default": "0",
    "description": "Percentage",
    "fieldname": "interest",
@@ -126,19 +118,22 @@
    "fieldname": "loan_account",
    "fieldtype": "Link",
    "label": "Loan Account",
-   "options": "Account"
+   "options": "Account",
+   "reqd": 1
   },
   {
    "fieldname": "disbursement_account",
    "fieldtype": "Link",
    "label": "Disbursement Account",
-   "options": "Account"
+   "options": "Account",
+   "reqd": 1
   },
   {
    "fieldname": "repayment_account",
    "fieldtype": "Link",
    "label": "Repayment Account",
-   "options": "Account"
+   "options": "Account",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_ikxz",
@@ -159,12 +154,20 @@
    "fieldtype": "Table",
    "label": "Schedule",
    "options": "Repayment Schedule"
+  },
+  {
+   "fieldname": "loan_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Loan Amount",
+   "non_negative": 1,
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-01-06 09:42:41.169107",
+ "modified": "2024-01-06 12:12:59.706639",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Bank Loan",
