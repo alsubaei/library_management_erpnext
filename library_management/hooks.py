@@ -138,7 +138,8 @@ override_doctype_class = {
 scheduler_events = {
 	"cron":{
 		 "0 0 * * *":[
-				"library_management.overrides.sales_order.update_days_of_delivery"
+				"library_management.overrides.sales_order.update_days_of_delivery",
+                "library_management.library_management.doctype.bank_loan.bank_loan.check_loans"
 				]
 		},
 #	"all": [

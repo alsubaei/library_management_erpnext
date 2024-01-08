@@ -84,3 +84,4 @@ def check_loans():
                         print(payment,'Partially paid')
                     break
             loan.save()
+            frappe.db.commit()
